@@ -1,0 +1,118 @@
+[
+  {
+    "image": "images/1.png",
+    "estate_title": "Modern Single-Family Home",
+    "productId": 1,
+    "segment": "Single-family homes",
+    "description": "Beautiful modern single-family home with spacious interiors and stunning architecture.",
+    "price": "$500,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Suburban neighborhood, City X",
+    "facilities": ["spacious living room", "backyard garden", "modern kitchen"]
+  },
+  {
+    "image": "images/2.png",
+    "estate_title": "Cozy Cottage",
+    "productId": 2,
+    "segment": "Single-family homes",
+    "description": "Charming cottage with a cozy atmosphere, perfect for a small family or couple.",
+    "price": "$300,000",
+    "status": "sale",
+    "area": "1500 sq ft",
+    "location": "Rural countryside, City Y",
+    "facilities": ["rustic fireplace", "garden patio", "country-style kitchen"]
+  },
+  {
+    "image": "images/3.png",
+    "estate_title": "Luxury Apartment",
+    "productId": 3,
+    "segment": "Apartments",
+    "description": "Exquisite apartment with opulent amenities and breathtaking views of the city.",
+    "price": "$2,000/month",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "Downtown area, City Z",
+    "facilities": ["swimming pool", "gym", "concierge service"]
+  },
+  {
+    "image": "images/4.png",
+    "estate_title": "Historic Townhouse",
+    "productId": 4,
+    "segment": "Townhouses",
+    "description": "Elegant townhouse with historic charm and modern updates, situated in a picturesque neighborhood.",
+    "price": "$900,000",
+    "status": "sale",
+    "area": "3200 sq ft",
+    "location": "Historic district, City Y",
+    "facilities": [
+      "original architectural details",
+      "private courtyard",
+      "gourmet kitchen"
+    ]
+  },
+  {
+    "image": "images/5.png",
+    "estate_title": "Student Dormitory",
+    "productId": 5,
+    "segment": "Student housing",
+    "description": "Modern dormitory accommodation designed for students, offering convenience and community.",
+    "price": "$800/month",
+    "status": "rent",
+    "area": "200 sq ft (per room)",
+    "location": "Near university campus, City X",
+    "facilities": ["study area", "shared kitchen", "laundry facilities"]
+  },
+  {
+    "image": "images/6.png",
+    "estate_title": "Senior Living Community",
+    "productId": 6,
+    "segment": "Senior living communities",
+    "description": "Retirement community providing comfortable living for seniors with various amenities and care options.",
+    "price": "$3,500/month",
+    "status": "rent",
+    "area": "1000 sq ft (apartment)",
+    "location": "Retirement village, City Y",
+    "facilities": ["meal service", "fitness center", "medical care"]
+  },
+  {
+    "image": "images/7.png",
+    "estate_title": "Beachfront Villa",
+    "productId": 7,
+    "segment": "Vacation rentals",
+    "description": "Luxurious beachfront villa perfect for a holiday getaway, offering stunning ocean views and resort-style amenities.",
+    "price": "$1,500/night",
+    "status": "rent",
+    "area": "4000 sq ft",
+    "location": "Tropical paradise, City Z",
+    "facilities": [
+      "private beach access",
+      "infinity pool",
+      "outdoor dining area"
+    ]
+  },
+  {
+    "image": "images/8.png",
+    "estate_title": "Urban Loft",
+    "productId": 8,
+    "segment": "Apartments",
+    "description": "Spacious loft apartment located in the vibrant urban center, offering modern living in a lively neighborhood.",
+    "price": "$1,200/month",
+    "status": "rent",
+    "area": "800 sq ft",
+    "location": "City center, City X",
+    "facilities": ["open-concept layout", "city views", "fitness center"]
+  },
+  {
+    "image": "images/9.png",
+    "estate_title": "Family Vacation Home",
+    "productId": 9,
+    "segment": "Vacation rentals",
+    "description": "Comfortable vacation home perfect for families, located near popular attractions and recreational activities.",
+    "price": "$300/night",
+    "status": "rent",
+    "area": "1800 sq ft",
+    "location": "Tourist destination, City Y",
+    "facilities": ["game room", "outdoor patio", "barbecue grill"]
+  }
+]
