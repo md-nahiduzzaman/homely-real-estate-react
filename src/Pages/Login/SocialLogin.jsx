@@ -1,5 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import { BsGoogle } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 const SocialLogin = () => {
   const { googleLogin, githubLogin } = useAuth();
@@ -19,12 +21,18 @@ const SocialLogin = () => {
 
   return (
     <div>
-      <div className="divider">Continue With</div>
-      <div className="btn btn-primary btn-outline">
-        <button onClick={() => handleSocial(googleLogin)}>Google</button>
-      </div>
-      <div className="btn btn-primary btn-outline">
-        <button onClick={() => handleSocial(githubLogin)}>GitHub</button>
+      <div className="divider">OR</div>
+      <div className="flex gap-6 items-center justify-center pb-8">
+        <div className="btn btn-primary btn-outline rounded-full">
+          <button onClick={() => handleSocial(googleLogin)}>
+            <BsGoogle />
+          </button>
+        </div>
+        <div className="btn btn-primary btn-outline rounded-full">
+          <button onClick={() => handleSocial(githubLogin)}>
+            <BsGithub />
+          </button>
+        </div>
       </div>
     </div>
   );

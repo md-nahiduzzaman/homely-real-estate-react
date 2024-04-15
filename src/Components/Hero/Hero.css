@@ -8,11 +8,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slide1 {
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
   position: relative;
 }
 
-.slide1::before {
+.slide1::before,
+.slide2::before,
+.slide3::before,
+.slide4::before {
   content: "";
   position: absolute;
   top: 0;

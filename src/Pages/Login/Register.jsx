@@ -1,11 +1,15 @@
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import SocialLogin from "./SocialLogin";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Register = () => {
   //context api
   const { user, createUser, updateUserProfile } = useAuth();
+
+  // navigation
+  const navigate = useNavigate();
+  const location = useLocation();
 
   //hook
   const {
@@ -22,7 +26,7 @@ const Register = () => {
       .then(() => {
         // console.log(result.user);
         updateUserProfile(fullName, image).then(() => {
-          // console.log("profile updated");
+          navigate(location?.state || "/");
         });
       })
       .catch((error) => {
@@ -34,16 +38,15 @@ const Register = () => {
     <div>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">Login now!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-          </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="text-center lg:text-left"></div>
+          <div className="card shrink-0 w-full max-w-md shadow-1xl bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
+              <div>
+                <h1 className="text-3xl font-bold text-center">
+                  Create an Account
+                </h1>
+              </div>
+              <hr className="mt-6 mb-6" />
               {/* name */}
               <div className="form-control">
                 <label className="label">
@@ -96,7 +99,10 @@ const Register = () => {
                   type="password"
                   placeholder="password"
                   className="input input-bordered"
-                  {...register("password", { required: true })}
+                  {...register("password", {
+                    pattern: /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/,
+                    required: true,
+                  })}
                 />
                 {errors.password && (
                   <span className="text-red-900">This field is required</span>
@@ -104,8 +110,11 @@ const Register = () => {
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
-                <p>
-                  Already have an account? <Link to="/login">Login</Link>
+                <p className="mt-4">
+                  Already have an account?{" "}
+                  <Link to="/login">
+                    <span className="underline underline-offset-2">Login</span>
+                  </Link>
                 </p>
               </div>
             </form>
