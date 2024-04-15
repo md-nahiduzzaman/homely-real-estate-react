@@ -7,6 +7,9 @@ import Register from "../Pages/Login/Register";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
 import UpdateUserProfile from "../Pages/Login/UpdateUserProfile";
+import About from "../Pages/About/About";
+import Contact from "../Pages/Contact/Contact";
+import UserProfile from "../Pages/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,15 @@ const router = createBrowserRouter([
         path: "",
         element: <Home></Home>,
       },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+
       {
         path: "/login",
         element: <Login></Login>,
@@ -31,6 +43,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <UpdateUserProfile></UpdateUserProfile>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/userProfile",
+        element: (
+          <PrivateRoute>
+            <UserProfile></UserProfile>
           </PrivateRoute>
         ),
       },

@@ -10,11 +10,29 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact">Contact</NavLink>
+      </li>
+      {/* <li>
         <NavLink to="/login">Login</NavLink>
       </li>
       <li>
         <NavLink to="/register">Registration</NavLink>
-      </li>
+      </li> */}
+      {user ? (
+        <>
+          <li>
+            <NavLink to="/update">Update Profile</NavLink>
+          </li>
+          <li>
+            <NavLink to="/userProfile">User Profile</NavLink>
+          </li>
+        </>
+      ) : (
+        ""
+      )}
 
       {/* <li>
         <NavLink to="/update">Update Profile</NavLink>
@@ -23,10 +41,10 @@ const Navbar = () => {
   );
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto z-10">
       <div className="navbar bg-base-100 mt-6 mb-6">
         <div className="navbar-start">
-          <div className="dropdown">
+          <div className="dropdown z-10">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +68,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <Link to="/" className="text-4xl font-black">
+          <Link to="/" className="text-2xl font-black">
             HOMELY
           </Link>
         </div>
@@ -58,7 +76,37 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          {user && (
+          {user ? (
+            <>
+              <div className="flex gap-5 items-center">
+                <div>
+                  <div className="avatar tooltip" data-tip={user.displayName}>
+                    <div className="w-12 rounded-full">
+                      <img src={user.photoURL} />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button onClick={logout} className="btn rounded-none">
+                    Logout
+                  </button>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="flex gap-5 ">
+                <Link to="/login">
+                  <button className="btn  rounded-none">Sign In</button>
+                </Link>
+                <Link to="/register">
+                  <button className="btn rounded-none">Sign up</button>
+                </Link>
+              </div>
+            </>
+          )}
+
+          {/* {user && (
             <div className="dropdown dropdown-end">
               <div
                 tabIndex={0}
@@ -97,7 +145,7 @@ const Navbar = () => {
             <Link to="/login">
               <button className="btn">Logo In</button>
             </Link>
-          )}
+          )} */}
         </div>
       </div>
     </div>

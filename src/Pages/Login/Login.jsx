@@ -50,6 +50,9 @@ const Login = () => {
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
+                <div>
+                  <h1 className="text-5xl font-bold">Login now!</h1>
+                </div>
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
