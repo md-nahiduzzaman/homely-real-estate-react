@@ -1,10 +1,15 @@
+import Hero from "../../Components/Hero/Hero";
 import Products from "../Products/Products";
 
 const Home = () => {
   return (
-    <div>
-      <h1>This is Home</h1>
-      <Products></Products>
+    <div className="container mx-auto">
+      <div className="">
+        <Hero></Hero>
+      </div>
+      <div className="">
+        <Products></Products>
+      </div>
     </div>
   );
 };

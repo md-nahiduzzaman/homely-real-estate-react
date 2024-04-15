@@ -1,6 +1,6 @@
 [
   {
-    "image": "images/1.png",
+    "image": "https://i.ibb.co/XZQ9NZN/1.png",
     "estate_title": "Modern Single-Family Home",
     "productId": 1,
     "segment": "Single-family homes",
@@ -12,7 +12,7 @@
     "facilities": ["spacious living room", "backyard garden", "modern kitchen"]
   },
   {
-    "image": "images/2.png",
+    "image": "https://i.ibb.co/F8Pk0nx/2.png",
     "estate_title": "Cozy Cottage",
     "productId": 2,
     "segment": "Single-family homes",
@@ -24,7 +24,7 @@
     "facilities": ["rustic fireplace", "garden patio", "country-style kitchen"]
   },
   {
-    "image": "images/3.png",
+    "image": "https://i.ibb.co/MB3Lh74/3.png",
     "estate_title": "Luxury Apartment",
     "productId": 3,
     "segment": "Apartments",
@@ -36,7 +36,7 @@
     "facilities": ["swimming pool", "gym", "concierge service"]
   },
   {
-    "image": "images/4.png",
+    "image": "https://i.ibb.co/X89MsPf/4.png",
     "estate_title": "Historic Townhouse",
     "productId": 4,
     "segment": "Townhouses",
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "image": "images/5.png",
+    "image": "https://i.ibb.co/GVvM9BM/5.png",
     "estate_title": "Student Dormitory",
     "productId": 5,
     "segment": "Student housing",
@@ -64,7 +64,7 @@
     "facilities": ["study area", "shared kitchen", "laundry facilities"]
   },
   {
-    "image": "images/6.png",
+    "image": "https://i.ibb.co/cch9N1D/6.png",
     "estate_title": "Senior Living Community",
     "productId": 6,
     "segment": "Senior living communities",
@@ -76,7 +76,7 @@
     "facilities": ["meal service", "fitness center", "medical care"]
   },
   {
-    "image": "images/7.png",
+    "image": "https://i.ibb.co/Yy7dY7q/7.png",
     "estate_title": "Beachfront Villa",
     "productId": 7,
     "segment": "Vacation rentals",
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "image": "images/8.png",
+    "image": "https://i.ibb.co/2kg37FS/8.png",
     "estate_title": "Urban Loft",
     "productId": 8,
     "segment": "Apartments",
@@ -104,7 +104,7 @@
     "facilities": ["open-concept layout", "city views", "fitness center"]
   },
   {
-    "image": "images/9.png",
+    "image": "https://i.ibb.co/TmVbK2r/9.png",
     "estate_title": "Family Vacation Home",
     "productId": 9,
     "segment": "Vacation rentals",

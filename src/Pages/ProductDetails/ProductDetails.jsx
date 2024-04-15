@@ -19,11 +19,9 @@ const ProductDetails = () => {
     facilities,
   } = product;
 
-  console.log(image);
-
   return (
-    <div className="flex sm:flex-row flex-col gap-10 sm:mx-0 mx-4">
-      <div className="flex">
+    <div className="">
+      <div className="">
         <img src={image} alt="" />
       </div>
       <div>

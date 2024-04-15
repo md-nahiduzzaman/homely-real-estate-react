@@ -28,7 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/update",
-        element: <UpdateUserProfile></UpdateUserProfile>,
+        element: (
+          <PrivateRoute>
+            <UpdateUserProfile></UpdateUserProfile>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/product/:id",
@@ -37,7 +41,7 @@ const router = createBrowserRouter([
             <ProductDetails></ProductDetails>
           </PrivateRoute>
         ),
-        loader: () => fetch("data.json"),
+        loader: () => fetch("/data.json"),
       },
     ],
   },

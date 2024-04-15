@@ -3,7 +3,7 @@ import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
   const { logout, user } = useAuth();
-  console.log(user);
+
   const navLinks = (
     <>
       <li>
@@ -15,6 +15,7 @@ const Navbar = () => {
       <li>
         <NavLink to="/register">Registration</NavLink>
       </li>
+
       {/* <li>
         <NavLink to="/update">Update Profile</NavLink>
       </li> */}
@@ -22,8 +23,8 @@ const Navbar = () => {
   );
 
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className="container mx-auto">
+      <div className="navbar bg-base-100 mt-6 mb-6">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,13 +50,15 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Link to="/" className="text-4xl font-black">
+            HOMELY
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          {user ? (
+          {user && (
             <div className="dropdown dropdown-end">
               <div
                 tabIndex={0}
@@ -69,6 +72,7 @@ const Navbar = () => {
                   />
                 </div>
               </div>
+
               <ul
                 tabIndex={0}
                 className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
@@ -82,13 +86,17 @@ const Navbar = () => {
                 <li>
                   <Link to="/update">Update Profile</Link>
                 </li>
-                <li>
-                  <a onClick={logout}>Logout</a>
-                </li>
               </ul>
             </div>
+          )}
+          {user ? (
+            <button onClick={logout} className="btn">
+              Logout
+            </button>
           ) : (
-            <button className="btn">Logo In</button>
+            <Link to="/login">
+              <button className="btn">Logo In</button>
+            </Link>
           )}
         </div>
       </div>
