@@ -1,11 +1,11 @@
 const About = () => {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container mx-auto pr-4 pl-4">
         <div className=" flex flex-col lg:flex-row gap-14 items-center">
           <img
             src="https://images.unsplash.com/photo-1565402170291-8491f14678db?q=80&w=2017&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            className="w-[50%] h-[100%]"
+            className="sm:w-[50%] md:w-[100%] "
           />
           <div>
             <h1 className="text-4xl font-bold">About Us</h1>
@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
         <div
-          className="hero h-[30vh] mt-28 mb-28"
+          className="hero sm:h-[30vh] sm:mt-28 sm:mb-28 mb-4"
           style={{
             backgroundImage:
               "url(https://images.unsplash.com/photo-1512699355324-f07e3106dae5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
