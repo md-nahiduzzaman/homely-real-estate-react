@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
+import toast from "react-hot-toast";
 
 const UpdateUserProfile = () => {
   //context api
@@ -19,9 +20,11 @@ const UpdateUserProfile = () => {
     updateUserProfile(fullName, image)
       .then(() => {
         // console.log("profile updated");
+        toast.success("Successfully updated your profile!");
       })
       .catch((error) => {
         console.log(error.message);
+        toast.error("Please fill up the form ");
       });
 
     // createUser(email, password)

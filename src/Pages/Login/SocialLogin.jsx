@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import { BsGoogle } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
+import toast from "react-hot-toast";
 
 const SocialLogin = () => {
   const { googleLogin, githubLogin } = useAuth();
@@ -15,6 +16,7 @@ const SocialLogin = () => {
       console.log(result.user);
       if (result.user) {
         navigate(location?.state || "/");
+        toast.success("Successfully Login!");
       }
     });
   };

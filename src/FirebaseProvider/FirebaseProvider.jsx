@@ -10,6 +10,7 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
+import toast from "react-hot-toast";
 
 export const AuthContext = createContext(null);
 
@@ -46,6 +47,7 @@ const FirebaseProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
     signOut(auth);
+    toast.success("Successfully Logout!");
   };
 
   //google login

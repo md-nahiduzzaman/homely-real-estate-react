@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import SocialLogin from "./SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const Login = () => {
   //context api
@@ -27,10 +28,12 @@ const Login = () => {
         console.log(result.user);
         if (result.user) {
           navigate(location?.state || "/");
+          toast.success("Successfully Login!");
         }
       })
       .catch((error) => {
         console.log(error.message);
+        toast.error("Please check your email and password");
       });
   };
 

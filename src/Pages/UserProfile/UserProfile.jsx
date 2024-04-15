@@ -9,10 +9,11 @@ const UserProfile = () => {
     <div>
       <div className="hero h-[81vh] bg-base-200">
         <div className="hero-content flex-col items-center justify-center text-center">
-          <img
-            src={user.photoURL}
-            className="max-w-sm rounded-full shadow-1xl"
-          />
+          <div className="avatar">
+            <div className="w-24 rounded-full">
+              <img src={user.photoURL} />
+            </div>
+          </div>
           <div>
             <h1 className="text-5xl font-bold">{user.displayName}</h1>
             <p className="py-6">{user.email}</p>
