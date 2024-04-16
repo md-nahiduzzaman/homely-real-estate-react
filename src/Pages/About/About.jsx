@@ -6,8 +6,10 @@ const About = () => {
           <img
             src="https://images.unsplash.com/photo-1565402170291-8491f14678db?q=80&w=2017&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             className="sm:w-[50%] md:w-[100%] lg:w-[50%] "
+            data-aos="fade-right"
+            data-aos-duration="1000"
           />
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1000">
             <h1 className="text-4xl font-bold">About Us</h1>
             <p className="py-6">
               At Homely, we're more than just a business - we're a community
@@ -32,6 +34,8 @@ const About = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className="hero sm:h-[30vh] sm:mt-28 sm:mb-28 mb-4"
           style={{
             backgroundImage:

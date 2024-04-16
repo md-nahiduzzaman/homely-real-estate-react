@@ -8,7 +8,11 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className=" grid h-[82vh] max-w-screen-xl grid-cols-1 lg:gap-16 px-8 py-16 mx-auto rounded-lg lg:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
           <div className="flex flex-col justify-between">
-            <div className="space-y-2">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              className="space-y-2"
+            >
               <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
                 Get in Touch with Us
               </h2>
@@ -18,7 +22,12 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <form noValidate="" className="space-y-6">
+          <form
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            noValidate=""
+            className="space-y-6"
+          >
             <div>
               <label htmlFor="name" className="text-sm">
                 Full name

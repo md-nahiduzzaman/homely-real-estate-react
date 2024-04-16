@@ -43,7 +43,11 @@ const UpdateUserProfile = () => {
     <div>
       <div className="hero h-[82vh] bg-base-200">
         <div className="hero-content">
-          <div className="card shrink-0 w-full max-w-sm shadow-xl bg-base-100">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="card shrink-0 w-full max-w-sm shadow-xl bg-base-100"
+          >
             <form
               onSubmit={handleSubmit(onSubmit)}
               className="card-body w-full"

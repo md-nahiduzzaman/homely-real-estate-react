@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div data-aos="zoom-in" data-aos-duration="1000" className="">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <div className="slide slide1">

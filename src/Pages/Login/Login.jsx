@@ -49,7 +49,11 @@ const Login = () => {
               et a id nisi.
             </p>
           </div> */}
-          <div className="card shrink-0 w-full max-w-sm rounded border bg-base-100">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="card shrink-0 w-full max-w-sm rounded border bg-base-100"
+          >
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <div>

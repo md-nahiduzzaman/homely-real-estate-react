@@ -8,7 +8,11 @@ const UserProfile = () => {
   return (
     <div>
       <div className="hero h-[81vh] bg-base-200">
-        <div className="hero-content flex-col items-center justify-center text-center">
+        <div
+          data-aos="zoom-out-right"
+          data-aos-duration="1000"
+          className="hero-content flex-col items-center justify-center text-center"
+        >
           <div className="avatar">
             <div className="w-24 rounded-full">
               <img src={user.photoURL} />

@@ -39,7 +39,11 @@ const Register = () => {
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left"></div>
-          <div className="card shrink-0 w-full max-w-md shadow-1xl bg-base-100">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            className="card shrink-0 w-full max-w-md shadow-1xl bg-base-100"
+          >
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div>
                 <h1 className="text-3xl font-bold text-center">
