@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 const About = () => {
+  useEffect(() => {
+    document.title = "Homely | About";
+  }, []);
+
   return (
     <>
       <div className="container mx-auto pr-4 pl-4">
@@ -60,7 +66,7 @@ const About = () => {
                   />
                   <button
                     type="button"
-                    className="w-2/5 p-3 font-semibold  sm:w-1/3 btn rounded-none"
+                    className="w-2/5 p-3 font-semibold  sm:w-1/3 text-black bg-[#f7cd1b] border-none hover:bg-[#07b682]"
                   >
                     Subscribe
                   </button>

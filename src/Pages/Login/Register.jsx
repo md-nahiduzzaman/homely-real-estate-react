@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import SocialLogin from "./SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Register = () => {
   //context api
@@ -33,6 +34,10 @@ const Register = () => {
         console.log(error.message);
       });
   };
+
+  useEffect(() => {
+    document.title = "Homely | Register";
+  }, []);
 
   return (
     <div>
@@ -113,7 +118,9 @@ const Register = () => {
                 )}
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Register</button>
+                <button className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
+                  Register
+                </button>
                 <p className="mt-4">
                   Already have an account?{" "}
                   <Link to="/login">

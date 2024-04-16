@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const ProductDetails = () => {
+  useEffect(() => {
+    document.title = `Homely | ${estate_title}`;
+  }, []);
+
   const products = useLoaderData();
   const { id } = useParams();
 

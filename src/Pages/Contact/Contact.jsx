@@ -1,7 +1,12 @@
+import { useEffect } from "react";
+
 const Contact = () => {
   const handaleSubmitbtn = (e) => {
     e.preventDefault();
   };
+  useEffect(() => {
+    document.title = "Homely | Contact";
+  }, []);
 
   return (
     <>
@@ -63,7 +68,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-violet-400 text-gray-900"
+              className="w-full p-3 text-sm font-bold tracking-wide uppercase  text-gray-900 btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]"
               onClick={handaleSubmitbtn}
             >
               Send Message

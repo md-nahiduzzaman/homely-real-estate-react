@@ -3,6 +3,7 @@ import useAuth from "../../hooks/useAuth";
 import SocialLogin from "./SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { useEffect } from "react";
 
 const Login = () => {
   //context api
@@ -36,6 +37,10 @@ const Login = () => {
         toast.error("Please check your email and password");
       });
   };
+
+  useEffect(() => {
+    document.title = "Homely | Login";
+  }, []);
 
   return (
     <div>
@@ -90,7 +95,9 @@ const Login = () => {
                 )}
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary rounded">Login</button>
+                <button className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
+                  Login
+                </button>
                 <p className="mt-4">
                   Do not have an account?{" "}
                   <Link to="/register">

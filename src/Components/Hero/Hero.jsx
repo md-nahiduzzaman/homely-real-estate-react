@@ -24,7 +24,9 @@ const Hero = () => {
                   estates, we have the perfect home waiting for you.
                 </p>
                 <Link to="/register">
-                  <button className="btn rounded">Join Now</button>
+                  <button className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
+                    Join Now
+                  </button>
                 </Link>
               </div>
             </div>
@@ -44,7 +46,9 @@ const Hero = () => {
                   informed decisions and maximize your returns.
                 </p>
                 <Link to="/register">
-                  <button className="btn rounded">Join Now</button>
+                  <button className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
+                    Join Now
+                  </button>
                 </Link>
               </div>
             </div>
@@ -62,7 +66,9 @@ const Hero = () => {
                   elegance at every turn.
                 </p>
                 <Link to="/register">
-                  <button className="btn rounded">Join Now</button>
+                  <button className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
+                    Join Now
+                  </button>
                 </Link>
               </div>
             </div>
@@ -82,7 +88,9 @@ const Hero = () => {
                   and opportunities shaping the world of real estate.
                 </p>
                 <Link to="/register">
-                  <button className="btn rounded">Join Now</button>
+                  <button className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
+                    Join Now
+                  </button>
                 </Link>
               </div>
             </div>

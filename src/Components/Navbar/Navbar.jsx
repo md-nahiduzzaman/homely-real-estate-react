@@ -7,13 +7,44 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-[#07b682] font-bold" : "font-bold"
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/about">About</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-[#07b682] font-bold" : "font-bold"
+          }
+          to="/about"
+        >
+          About
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-[#07b682] font-bold" : "font-bold"
+          }
+          to="/contact"
+        >
+          Contact
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-[#07b682] font-bold" : "font-bold"
+          }
+          to="/update"
+        >
+          Update Profile
+        </NavLink>
       </li>
       {/* <li>
         <NavLink to="/login">Login</NavLink>
@@ -23,11 +54,18 @@ const Navbar = () => {
       </li> */}
       {user ? (
         <>
-          <li>
+          {/* <li>
             <NavLink to="/update">Update Profile</NavLink>
-          </li>
+          </li> */}
           <li>
-            <NavLink to="/userProfile">User Profile</NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-[#07b682] font-bold" : "font-bold"
+              }
+              to="/userProfile"
+            >
+              User Profile
+            </NavLink>
           </li>
         </>
       ) : (
@@ -87,7 +125,10 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div>
-                  <button onClick={logout} className="btn rounded">
+                  <button
+                    onClick={logout}
+                    className="btn rounded bg-[#f7cd1b] hover:bg-[#07b682]"
+                  >
                     Logout
                   </button>
                 </div>
@@ -97,10 +138,14 @@ const Navbar = () => {
             <>
               <div className="flex gap-5 ">
                 <Link to="/login">
-                  <button className="btn  rounded">Sign In</button>
+                  <button className="btn rounded border-[#f7cd1b] bg-[#f7cf1b17]  hover:bg-[#07b682]">
+                    Sign In
+                  </button>
                 </Link>
                 <Link to="/register">
-                  <button className="btn rounded">Sign up</button>
+                  <button className="btn rounded bg-[#f7cd1b] hover:bg-[#07b682]">
+                    Sign up
+                  </button>
                 </Link>
               </div>
             </>

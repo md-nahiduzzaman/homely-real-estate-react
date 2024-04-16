@@ -57,7 +57,9 @@ const Product = ({ product }) => {
           <hr />
           <div>
             <Link to={`/product/${productId}`}>
-              <button className="btn rounded">View Property</button>
+              <button className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
+                View Property
+              </button>
             </Link>
           </div>
         </div>

@@ -1,8 +1,13 @@
 import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
+import { useEffect } from "react";
 
 const UpdateUserProfile = () => {
+  useEffect(() => {
+    document.title = "Homely | Update Profile";
+  }, []);
+
   //context api
   const { updateUserProfile } = useAuth();
 
@@ -88,7 +93,9 @@ const UpdateUserProfile = () => {
               </div>
 
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Update</button>
+                <button className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
+                  Update
+                </button>
               </div>
             </form>
           </div>

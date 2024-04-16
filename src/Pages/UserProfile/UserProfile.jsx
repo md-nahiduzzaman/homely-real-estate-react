@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import { useEffect } from "react";
 
 const UserProfile = () => {
   const { logout, user } = useAuth();
   console.log(user);
+
+  useEffect(() => {
+    document.title = "Homely | User Profile";
+  }, []);
 
   return (
     <div>
@@ -23,9 +28,14 @@ const UserProfile = () => {
             <p className="py-6">{user.email}</p>
             <div className="flex gap-6 items-center justify-center">
               <Link to="/update">
-                <button className="btn btn-primary">Update Info</button>
+                <button className="btn rounded bg-[#f7cd1b] hover:bg-[#07b682]">
+                  Update Info
+                </button>
               </Link>
-              <button onClick={logout} className="btn btn-primary">
+              <button
+                onClick={logout}
+                className="btn rounded border-[#f7cd1b] bg-[#f7cf1b17]  hover:bg-[#07b682]"
+              >
                 Logout
               </button>
             </div>
