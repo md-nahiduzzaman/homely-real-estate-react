@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -22,7 +23,9 @@ const Hero = () => {
                   sought-after locations. From cozy cottages to luxurious
                   estates, we have the perfect home waiting for you.
                 </p>
-                <button className="btn rounded-none">Get Started</button>
+                <Link to="/register">
+                  <button className="btn rounded">Join Now</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -40,7 +43,9 @@ const Hero = () => {
                   investor or a first-time buyer, we're here to help you make
                   informed decisions and maximize your returns.
                 </p>
-                <button className="btn rounded-none">Get Started</button>
+                <Link to="/register">
+                  <button className="btn rounded">Join Now</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -56,7 +61,9 @@ const Hero = () => {
                   penthouse suites, immerse yourself in sophistication and
                   elegance at every turn.
                 </p>
-                <button className="btn rounded-none">Get Started</button>
+                <Link to="/register">
+                  <button className="btn rounded">Join Now</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -74,7 +81,9 @@ const Hero = () => {
                   with industry leaders, and stay updated on the latest trends
                   and opportunities shaping the world of real estate.
                 </p>
-                <button className="btn rounded-none">Get Started</button>
+                <Link to="/register">
+                  <button className="btn rounded">Join Now</button>
+                </Link>
               </div>
             </div>
           </div>

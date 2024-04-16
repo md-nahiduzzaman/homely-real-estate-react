@@ -10,6 +10,7 @@ import UpdateUserProfile from "../Pages/Login/UpdateUserProfile";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import UserProfile from "../Pages/UserProfile/UserProfile";
+import Products from "../Pages/Products/Products";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home></Home>,
+      },
+      {
+        path: "/estate",
+        element: <Products></Products>,
       },
       {
         path: "/about",

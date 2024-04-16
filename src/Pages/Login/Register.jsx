@@ -117,6 +117,7 @@ const Register = () => {
                   </Link>
                 </p>
               </div>
+              <hr className="mt-4" />
             </form>
             <SocialLogin></SocialLogin>
           </div>

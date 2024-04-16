@@ -49,7 +49,7 @@ const Login = () => {
               et a id nisi.
             </p>
           </div> */}
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card shrink-0 w-full max-w-sm rounded border bg-base-100">
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <div>
@@ -64,7 +64,7 @@ const Login = () => {
                 <input
                   type="email"
                   placeholder="email"
-                  className="input input-bordered"
+                  className="input input-bordered rounded"
                   {...register("email", { required: true })}
                 />
                 {errors.email && (
@@ -78,7 +78,7 @@ const Login = () => {
                 <input
                   type="password"
                   placeholder="password"
-                  className="input input-bordered"
+                  className="input input-bordered rounded"
                   {...register("password", { required: true })}
                 />
                 {errors.email && (
@@ -86,17 +86,19 @@ const Login = () => {
                 )}
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn btn-primary rounded">Login</button>
                 <p className="mt-4">
                   Do not have an account?{" "}
                   <Link to="/register">
-                    <span className="underline underline-offset-2">
+                    <span className="underline underline-offset-2 ">
                       Register
                     </span>{" "}
                   </Link>
                 </p>
               </div>
+              <hr className="mt-6" />
             </form>
+
             <SocialLogin></SocialLogin>
           </div>
         </div>

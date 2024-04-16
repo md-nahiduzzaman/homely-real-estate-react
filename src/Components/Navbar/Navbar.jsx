@@ -87,7 +87,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div>
-                  <button onClick={logout} className="btn rounded-none">
+                  <button onClick={logout} className="btn rounded">
                     Logout
                   </button>
                 </div>
@@ -97,10 +97,10 @@ const Navbar = () => {
             <>
               <div className="flex gap-5 ">
                 <Link to="/login">
-                  <button className="btn  rounded-none">Sign In</button>
+                  <button className="btn  rounded">Sign In</button>
                 </Link>
                 <Link to="/register">
-                  <button className="btn rounded-none">Sign up</button>
+                  <button className="btn rounded">Sign up</button>
                 </Link>
               </div>
             </>
