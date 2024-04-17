@@ -54,7 +54,7 @@ const Register = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div>
                 <h1 className="text-3xl font-bold text-center">
-                  Create an Account
+                  Create an account
                 </h1>
               </div>
               <hr className="mt-6 mb-6" />

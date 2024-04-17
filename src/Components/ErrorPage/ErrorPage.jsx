@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const ErrorPage = () => {
   return (
     <>
-      <div className="container mx-auto flex items-center justify-center h-[100vh]">
+      <div className="container mx-auto flex items-center justify-center min-h-screen">
         <section className="flex items-center h-full p-16 ">
           <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
             <div className="max-w-md text-center">
@@ -18,8 +18,8 @@ const ErrorPage = () => {
                 homepage.
               </p>
 
-              <Link to="/register">
-                <button className="px-8 py-3 font-semibold rounded bg-violet-400 text-gray-900">
+              <Link to="/">
+                <button className="px-8 py-3 font-semibold btn rounded bg-[#f7cd1b] hover:bg-[#07b682]">
                   Back to homepage
                 </button>
               </Link>

@@ -64,9 +64,7 @@ const Login = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <div className="form-control">
                 <div>
-                  <h1 className="text-3xl font-bold text-center">
-                    Welcome back
-                  </h1>
+                  <h1 className="text-3xl font-bold text-center">Login</h1>
                 </div>
                 <hr className="mt-6 mb-6" />
                 <label className="label">

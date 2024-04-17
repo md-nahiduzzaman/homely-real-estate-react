@@ -56,6 +56,16 @@ const Navbar = () => {
           User Profile
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-[#07b682] font-bold" : "font-bold"
+          }
+          to="/myCart"
+        >
+          My Cart
+        </NavLink>
+      </li>
       {/* <li>
         <NavLink to="/login">Login</NavLink>
       </li>
