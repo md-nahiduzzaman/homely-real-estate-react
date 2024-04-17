@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <>
       <div className="container mx-auto">
-        <div className=" grid h-[82vh] max-w-screen-xl grid-cols-1 lg:gap-16 px-8 py-16 mx-auto rounded-lg lg:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
+        <div className=" grid min-h-screen max-w-screen-xl grid-cols-1 lg:gap-16 px-8 py-16 mx-auto rounded-lg lg:grid-cols-2 md:px-12 lg:px-16 xl:px-32 ">
           <div className="flex flex-col justify-between">
             <div
               data-aos="fade-right"

@@ -2,6 +2,8 @@
 
 ## Explore Your Dream Homes at [Homely Real Estate](https://assignment-demo-427f4.web.app/)
 
+## Live Link: https://assignment-demo-427f4.web.app/
+
 ### Features and Characteristics:
 
 - **Immersive Animations**: Elevate your browsing experience with seamlessly integrated animations powered by AOS (Animate on Scroll).
