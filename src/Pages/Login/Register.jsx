@@ -97,8 +97,11 @@ const Register = () => {
                   type="text"
                   placeholder="Image url"
                   className="input input-bordered"
-                  {...register("image")}
+                  {...register("image", { required: true })}
                 />
+                {errors.email && (
+                  <span className="text-red-900">This field is required</span>
+                )}
               </div>
 
               {/* password */}
