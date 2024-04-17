@@ -2,9 +2,11 @@ import { useForm } from "react-hook-form";
 import useAuth from "../../hooks/useAuth";
 import SocialLogin from "./SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
+  const [showPassword, setShowPassword] = useState(false);
   //context api
   const { user, createUser, updateUserProfile } = useAuth();
 
@@ -77,7 +79,7 @@ const Register = () => {
                   <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="email"
+                  type="Email"
                   placeholder="email"
                   className="input input-bordered"
                   {...register("email", { required: true })}
@@ -93,26 +95,32 @@ const Register = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="image url"
+                  placeholder="Image url"
                   className="input input-bordered"
                   {...register("image")}
                 />
               </div>
 
               {/* password */}
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
-                  placeholder="password"
+                  type={showPassword ? "text" : "password"}
+                  placeholder="Password"
                   className="input input-bordered"
                   {...register("password", {
                     pattern: /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/,
                     required: true,
                   })}
                 />
+                <span
+                  className="absolute right-2 bottom-4"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                </span>
                 {errors.password && (
                   <span className="text-red-900">This field is required</span>
                 )}

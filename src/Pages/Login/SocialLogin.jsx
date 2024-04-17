@@ -25,13 +25,19 @@ const SocialLogin = () => {
     <div>
       <p className="text-center mb-6">Or continue with</p>
       <div className="flex gap-6 items-center justify-center pb-8">
-        <div className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
-          <button onClick={() => handleSocial(googleLogin)}>
+        <div>
+          <button
+            className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]"
+            onClick={() => handleSocial(googleLogin)}
+          >
             <BsGoogle />
           </button>
         </div>
-        <div className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]">
-          <button onClick={() => handleSocial(githubLogin)}>
+        <div>
+          <button
+            className="btn rounded bg-[#f7cd1b] border-none hover:bg-[#07b682]"
+            onClick={() => handleSocial(githubLogin)}
+          >
             <BsGithub />
           </button>
         </div>

@@ -53,7 +53,7 @@ const ProductDetails = () => {
             </div>
             <hr />
             <div className="pt-2 pb-2">
-              <h3 className="font-bold ">Facilities</h3>
+              <h3 className="font-bold pb-4 ">Facilities</h3>
               <p>
                 #<span>{facilities[0]}</span>
               </p>
@@ -66,6 +66,7 @@ const ProductDetails = () => {
             </div>
             <hr />
             <div className="pt-2 pb-2">
+              <h3 className="font-bold pb-4">Specification</h3>
               <div className="overflow-x-auto">
                 <table className="table sm:w-[50%] ">
                   <tbody className="">

@@ -3,9 +3,11 @@ import useAuth from "../../hooks/useAuth";
 import SocialLogin from "./SocialLogin";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
   //context api
   const { signInUser } = useAuth();
 
@@ -80,16 +82,23 @@ const Login = () => {
                   <span className="text-red-900">This field is required</span>
                 )}
               </div>
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
+
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder="password"
                   className="input input-bordered rounded"
                   {...register("password", { required: true })}
                 />
+                <span
+                  className="absolute right-2 bottom-4"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+                </span>
                 {errors.email && (
                   <span className="text-red-900">This field is required</span>
                 )}

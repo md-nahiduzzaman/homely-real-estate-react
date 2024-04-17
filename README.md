@@ -1,6 +1,6 @@
 # Welcome to Homely Real Estate
 
-## Explore Your Dream Homes at [Homely Real Estate](https://www.homelyrealestate.com)
+## Explore Your Dream Homes at [Homely Real Estate](https://assignment-demo-427f4.web.app/)
 
 ### Features and Characteristics:
 
