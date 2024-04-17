@@ -99,7 +99,7 @@ const Register = () => {
                   className="input input-bordered"
                   {...register("image", { required: true })}
                 />
-                {errors.email && (
+                {errors.image && (
                   <span className="text-red-900">This field is required</span>
                 )}
               </div>
