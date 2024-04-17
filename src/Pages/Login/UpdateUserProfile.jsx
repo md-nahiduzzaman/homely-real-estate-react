@@ -46,7 +46,7 @@ const UpdateUserProfile = () => {
 
   return (
     <div>
-      <div className="hero h-[82vh] bg-base-200">
+      <div className="hero min-h-screen bg-base-200">
         <div className="hero-content">
           <div
             data-aos="zoom-in"

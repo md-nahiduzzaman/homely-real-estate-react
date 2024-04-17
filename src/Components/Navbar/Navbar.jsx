@@ -46,6 +46,16 @@ const Navbar = () => {
           Update Profile
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-[#07b682] font-bold" : "font-bold"
+          }
+          to="/userProfile"
+        >
+          User Profile
+        </NavLink>
+      </li>
       {/* <li>
         <NavLink to="/login">Login</NavLink>
       </li>
@@ -57,7 +67,7 @@ const Navbar = () => {
           {/* <li>
             <NavLink to="/update">Update Profile</NavLink>
           </li> */}
-          <li>
+          {/* <li>
             <NavLink
               className={({ isActive }) =>
                 isActive ? "text-[#07b682] font-bold" : "font-bold"
@@ -66,7 +76,7 @@ const Navbar = () => {
             >
               User Profile
             </NavLink>
-          </li>
+          </li> */}
         </>
       ) : (
         ""
@@ -120,7 +130,7 @@ const Navbar = () => {
                 <div>
                   <div className="avatar tooltip" data-tip={user.displayName}>
                     <div className="w-12 rounded-full">
-                      <img src={user.photoURL} />
+                      <img src={user.photoURL} alt="user photo" />
                     </div>
                   </div>
                 </div>

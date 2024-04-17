@@ -12,7 +12,7 @@ const UserProfile = () => {
 
   return (
     <div>
-      <div className="hero h-[81vh] bg-base-200">
+      <div className="hero min-h-screen bg-base-200">
         <div
           data-aos="zoom-out-right"
           data-aos-duration="1000"
@@ -20,11 +20,11 @@ const UserProfile = () => {
         >
           <div className="avatar">
             <div className="w-24 rounded-full">
-              <img src={user.photoURL} />
+              <img src={user?.photoURL} alt="user photo" />
             </div>
           </div>
           <div>
-            <h1 className="text-5xl font-bold">{user.displayName}</h1>
+            <h1 className="text-5xl font-bold">{user?.displayName}</h1>
             <p className="py-6">{user.email}</p>
             <div className="flex gap-6 items-center justify-center">
               <Link to="/update">
